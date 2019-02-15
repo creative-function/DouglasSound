@@ -1,0 +1,58 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+
+
+/* 2. Content ================================= */
+
+h1.intro-title{
+	font-family:impact;
+	font-size: 3em;
+	position: absolute;
+	left:860px;
+}
+
+h2.intro-title{
+	font-family:impact;
+	font-size: 1.5em;
+}
+
+h3.intro-title{
+	font-family:impact;
+	font-size: 1em;
+}
+
+
+
+.nav{
+	position: absolute;
+	right:0;
+}
+
+.icon{
+	margin:20px;
+}
