@@ -1,0 +1,391 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 2. Content ================================= */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .column {
+    float: left;
+  }
+  .row {
+    height: auto;
+    margin-top: 20%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .one {
+    float: left;
+    width: 55%;
+  }
+  .stringCurtain {
+    display: none;
+  }
+  .pineCone {
+    width: 100%;
+  }
+  .fir {
+    display: none;
+  }
+  .two {
+    width: 40%;
+  }
+  .logo1 {
+    width: 100%;
+    display: none;
+  }
+  .logoMobile {
+    width: 100%;
+    margin-top: 10%;
+  }
+  h2.intro-title {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  h3.intro-title {
+    font-size: 1em;
+    text-align: center;
+  }
+  .icon {
+    margin: 20% 0% 0% 30%;
+  }
+  .icon.man {
+    width: 30%;
+  }
+  .icon.ring {
+    width: 20%;
+  }
+  .icon.snake {
+    width: 20%;
+  }
+  .icon.can {
+    width: 20%;
+  }
+  .icon.splat {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .column {
+    float: left;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .one {
+    float: left;
+    width: 70%;
+  }
+  .stringCurtain {
+    display: none;
+  }
+  .pineCone {
+    display: none;
+  }
+  .fir {
+    width: 100%;
+  }
+  .two {
+    width: 30%;
+  }
+  .logo1 {
+    width: 100%;
+  }
+  .logoMobile {
+    width: 100%;
+    display: none;
+  }
+  h2.intro-title {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  h3.intro-title {
+    font-size: 1em;
+    text-align: center;
+  }
+  .icon {
+    margin: 25% 0% 0% 40%;
+  }
+  .icon.man {
+    width: 20%;
+  }
+  .icon.ring {
+    width: 10%;
+  }
+  .icon.snake {
+    width: 10%;
+  }
+  .icon.can {
+    width: 10%;
+  }
+  .icon.splat {
+    width: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .column {
+    float: left;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .one {
+    float: left;
+    width: 70%;
+    height: 100vh;
+  }
+  .stringCurtain {
+    display: none;
+  }
+  .pineCone {
+    display: none;
+  }
+  .fir {
+    width: 100%;
+  }
+  .two {
+    width: 30%;
+  }
+  .logo1 {
+    width: 100%;
+  }
+  .logoMobile {
+    display: none;
+  }
+  h2.intro-title {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  h3.intro-title {
+    font-size: 1em;
+    text-align: center;
+  }
+  .icon {
+    margin: 25% 0% 0% 40%;
+  }
+  .icon.man {
+    width: 20%;
+  }
+  .icon.ring {
+    width: 10%;
+  }
+  .icon.snake {
+    width: 10%;
+  }
+  .icon.can {
+    width: 10%;
+  }
+  .icon.splat {
+    width: 10%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .column {
+    float: left;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .one {
+    float: left;
+    width: 75%;
+    height: 100vh;
+  }
+  .stringCurtain {
+    width: 100%;
+    height: 100vh;
+  }
+  .pineCone {
+    display: none;
+  }
+  .fir {
+    display: none;
+  }
+  .two {
+    width: 25%;
+  }
+  .logo1 {
+    width: 100%;
+  }
+  .logoMobile {
+    display: none;
+  }
+  h2.intro-title {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  h3.intro-title {
+    font-size: 1em;
+    text-align: center;
+  }
+  .icon {
+    margin: 25% 0% 0% 43%;
+  }
+  .icon.man {
+    margin-top: 10%;
+    width: 18%;
+  }
+  .icon.ring {
+    width: 10%;
+  }
+  .icon.snake {
+    width: 10%;
+  }
+  .icon.can {
+    width: 10%;
+  }
+  .icon.splat {
+    width: 10%;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .column {
+    float: left;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .one {
+    float: left;
+    width: 75%;
+    height: 100vh;
+  }
+  .stringCurtain {
+    width: 100%;
+    height: 100vh;
+  }
+  .pineCone {
+    display: none;
+  }
+  .fir {
+    display: none;
+  }
+  .two {
+    width: 25%;
+  }
+  .logo1 {
+    width: 100%;
+  }
+  .logoMobile {
+    display: none;
+  }
+  h2.intro-title {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  h3.intro-title {
+    font-size: 1em;
+    text-align: center;
+  }
+  .icon {
+    margin: 20% 0% 0% 43%;
+  }
+  .icon.man {
+    margin-top: 10%;
+    width: 18%;
+  }
+  .icon.ring {
+    width: 10%;
+  }
+  .icon.snake {
+    width: 10%;
+  }
+  .icon.can {
+    width: 10%;
+  }
+  .icon.splat {
+    width: 10%;
+  }
+}
+
+/*# sourceMappingURL=main copy.css.map */
