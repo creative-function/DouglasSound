@@ -16,11 +16,79 @@ TABLE OF CONTENTS:
 /* 0. Reset ================================= */
 @import 'reset';
 
+// Essonnes Headline Bold
+// font-family: essonnes-headline, serif;
+// font-weight: 700;
+// font-style: normal;
+
+// Essonnes Headline Italic
+// font-family: essonnes-headline, serif;
+// font-weight: 400;
+// font-style: italic;
+
+// Essonnes Headline Bold Italic
+// font-family: essonnes-headline, serif;
+// font-weight: 700;
+// font-style: italic;
+
+// Essonnes Headline Regular
+// font-family: essonnes-headline, serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Essonnes Display Bold Italic
+// font-family: essonnes-display, serif;
+// font-weight: 700;
+// font-style: italic;
+
+// Essonnes Display Italic
+// font-family: essonnes-display, serif;
+// font-weight: 400;
+// font-style: italic;
+
+// Essonnes Display Bold
+// font-family: essonnes-display, serif;
+// font-weight: 700;
+// font-style: normal;
+
+// Essonnes Display Regular
+// font-family: essonnes-display, serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Essonnes Text Bold
+// font-family: essonnes-text, serif;
+// font-weight: 700;
+// font-style: normal;
+
+// Essonnes Text Bold Italic
+// font-family: essonnes-text, serif;
+// font-weight: 700;
+// font-style: italic;
+
+// Essonnes Text Italic
+// font-family: essonnes-text, serif;
+// font-weight: 400;
+// font-style: italic;
+
+// Essonnes Text Regular
+// font-family: essonnes-text, serif;
+// font-weight: 400;
+// font-style: normal;
+
+
 
 /* 1. Main Layout ================================= */
 
 * {
 	box-sizing: border-box;
+}
+
+body{
+
+	font-family: essonnes-display, serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 
@@ -34,7 +102,38 @@ TABLE OF CONTENTS:
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 	
+	.article-header{
+		
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 1em;
+		position:relative;
+		bottom:-100px;
+		left:0px;
+		
+		h2{
+			margin-top:30px;
+		}
+	}
 	
+	.article-title{
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 2.5em;
+		position:relative;
+		bottom:-200px;
+		left:0px;
+
+		&.at2{
+			position:relative; 
+			left:30px;
+		}
+
+	}
+
+
 	.column {
 		float: left;	
 	}
@@ -71,6 +170,18 @@ TABLE OF CONTENTS:
 	.two{
 		width:40%;
 		// height: 100vh;
+
+		.menu-title{
+			display:none;
+			text-align: center;
+		}
+
+		:hover{
+
+			.menu-title{
+				display:block;
+			}
+		}
 	}
 
 	.logo1{
@@ -121,26 +232,28 @@ TABLE OF CONTENTS:
 	}
 	
 	.column-three{
-		width:40%;
+		width:100%;
 
 		img.fir2{
 			width:100%;
 		}
 	}
 	.column-four{
-		width:50%;
+		width:100%;
+		padding:20px;
 		float:right;
 		
 		
 	}
 
 	.column-five{
-		width:50%;
+		width:100%;
+		padding:20px;
 		
 	}
 
 	.column-six{
-		width:50%;
+		width:100%;
 		float:right;
 
 		img.branches{
@@ -149,30 +262,64 @@ TABLE OF CONTENTS:
 	}
 
 	.column-seven{
-		width:50%;
+		width:100%;
 
 		img.tallGrass{
-			width:50%;
+			width:100%;
 			
 		}
 		
 	}
 
 	.column-eight{
-		width:50%;
+		width:100%;
+		padding:20px;
 		float:right;
 	}
 
 	.ferry-commuting{
 		font-size: 1.3em;
 		line-height: 2em;
-		padding:100px;
+		
 	}
 
 }
 
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+	
+	.article-header{
+		
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 1em;
+		position:relative;
+		bottom:-100px;
+		left:40px;
+		
+		h2{
+			margin-top:30px;
+		}
+	}
+	
+	.article-title{
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 2.5em;
+		position:relative;
+		bottom:-200px;
+		left:40px;
+
+		&.at2{
+			position:relative; 
+			left:140px;
+		}
+
+	}
+
+
 	.column {
 		float: left;
 		
@@ -208,6 +355,17 @@ TABLE OF CONTENTS:
 	.two{
 		width:30%;
 		// height: 100vh;
+
+		.menu-title{
+			text-align: center;
+			display:none;
+		}
+
+		:hover{
+			.menu-title{
+				display:block;
+			}
+		}
 	}
 
 	.logo1{
@@ -261,55 +419,103 @@ TABLE OF CONTENTS:
 		width:40%;
 
 		img.fir2{
-			width:100%;
+			width:150%;
+			position: absolute;
+			left:-500px;
 		}
 	}
 	.column-four{
-		width:50%;
+		width:60%;
 		float:right;
+		padding:10px;
+
 		
 		
 	}
 
 	.column-five{
-		width:50%;
+		width:60%;
+		padding:10px;
+
 		
 	}
 
 	.column-six{
-		width:50%;
+		width:40%;
 		float:right;
+		overflow: hidden;
 
 		img.branches{
-			width:100%;
+			width:200%;
 		}
 	}
 
 	.column-seven{
-		width:50%;
+		width:40%;
 
 		img.tallGrass{
-			width:50%;
+			position:absolute;
+			top:4000px;
+			right:300px;
+			width: 50%;
 			
 		}
 		
 	}
 
 	.column-eight{
-		width:50%;
+		width:60%;
 		float:right;
+		padding:20px;
 	}
 
 	.ferry-commuting{
 		font-size: 1.3em;
 		line-height: 2em;
-		padding:100px;
+		padding:10px;
+		
 	}
 	
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	.article-header{
+		
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 1.2em;
+		position:relative;
+		bottom:-600px;
+		left:40px;
+		
+		h2{
+			margin-top:30px;
+		}
+	}
+	
+	.article-title{
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 5em;
+		position:relative;
+		bottom:-640px;
+		left:40px;
+
+		&.at2{
+			position:relative; 
+			left:200px;
+		}
+
+	}
+
+
+	
+	
 	.column {
 		float: left;
+		margin-top:50px;
 		
 		
 	}
@@ -341,8 +547,59 @@ TABLE OF CONTENTS:
 	}
 	
 	.two{
-		width:30%;
+		width:25%;
+		right:0;
+		top:0;
+		transition: transform .4s ease-out;
 		// height: 100vh;
+
+		.pineCone2{
+			width:100%;
+			float:left;
+			position:absolute;
+			right:170px;
+			display:none;
+		}
+		
+		.menu-title{
+			position: relative;
+			left:200px;
+			top:-30px;
+			width:100%;
+			height: 20%;
+			transition: transform .4s ease-out;
+			display:none;
+
+			font-family: essonnes-display, serif;
+			font-weight: 400;
+			font-size:1.2em;
+			font-style: normal;
+
+		}	
+		&:hover{
+			
+			transform: translateX(-75%);
+
+
+			& + .column.one{
+				transform: translateX(-50%);
+
+			}
+
+
+			& .menu-title{
+				display:block;
+				// height:50px;
+			
+
+			}
+
+			& .pineCone2{
+				display:block;
+				float:right;
+			}
+		}
+		
 	}
 
 	.logo1{
@@ -391,38 +648,46 @@ TABLE OF CONTENTS:
 	}
 
 	.column-three{
-		width:40%;
+		width:20%;
 
 		img.fir2{
-			width:100%;
+			width:250%;
 		}
 	}
 	.column-four{
 		width:50%;
 		float:right;
+		padding:20px;
 		
 		
 	}
 
 	.column-five{
-		width:50%;
+		width:60%;
+		padding:20px;
+		p.paragrah-five{
+		   width:100%;
+		  
+		 }
 		
 	}
 
 	.column-six{
-		width:50%;
+		width:40%;
 		float:right;
+		overflow: hidden;
 
 		img.branches{
-			width:100%;
+			width:130%;
 		}
 	}
 
 	.column-seven{
 		width:50%;
+		
 
 		img.tallGrass{
-			width:50%;
+			width:100%;
 			
 		}
 		
@@ -431,18 +696,54 @@ TABLE OF CONTENTS:
 	.column-eight{
 		width:50%;
 		float:right;
+		padding:20px;
 	}
 
 	.ferry-commuting{
 		font-size: 1.3em;
 		line-height: 2em;
-		padding:100px;
-	}
+			}
 	
 }
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+	
+	.article-header{
+		
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 1.2em;
+		position:relative;
+		bottom:-600px;
+		left:40px;
+		
+		h2{
+			margin-top:30px;
+		}
+	}
+	
+	.article-title{
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 5em;
+		position:relative;
+		bottom:-640px;
+		left:40px;
+
+		&.at2{
+			position:relative; 
+			left:200px;
+		}
+
+	}
+
+
+	
+	
 	.column {
 		float: left;
+		margin-top:50px;
 		
 		
 	}
@@ -455,27 +756,78 @@ TABLE OF CONTENTS:
 	
 	.one{
 		float: left;
-		width: 75%;
+		width: 70%;
 		height: 100vh;
 	}
 	
 	.stringCurtain{
-		width:100%;
-		height: 100vh;
+		display:none;
 	
 	}
-	
+
 	.pineCone{
 		display:none;
 	}
-	
-	.fir{
-		display:none;
-	}
 
+	.fir{
+		width:100%;
+		
+	}
+	
 	.two{
 		width:25%;
+		right:0;
+		top:0;
+		transition: transform .4s ease-out;
 		// height: 100vh;
+
+		.pineCone2{
+			width:100%;
+			float:left;
+			position:absolute;
+			right:170px;
+			display:none;
+		}
+		
+		.menu-title{
+			position: relative;
+			left:200px;
+			top:-30px;
+			width:100%;
+			height: 20%;
+			transition: transform .4s ease-out;
+			display:none;
+
+			font-family: essonnes-display, serif;
+			font-weight: 400;
+			font-size:1.2em;
+			font-style: normal;
+
+		}	
+		&:hover{
+			
+			transform: translateX(-75%);
+
+
+			& + .column.one{
+				transform: translateX(-50%);
+
+			}
+
+
+			& .menu-title{
+				display:block;
+				// height:50px;
+			
+
+			}
+
+			& .pineCone2{
+				display:block;
+				float:right;
+			}
+		}
+		
 	}
 
 	.logo1{
@@ -488,7 +840,7 @@ TABLE OF CONTENTS:
 	}
 
 	h2.intro-title{
-		font-size: 1.4em;
+		font-size: 1.2em;
 		text-align: center;
 	}
 
@@ -500,11 +852,10 @@ TABLE OF CONTENTS:
 
 	.icon{
 		
-		margin:25% 0% 0% 43%;
+		margin:25% 0% 0% 40%;
 
 		&.man{
-			margin-top:10%;
-			width:18%;
+			width:20%;
 		}
 
 		&.ring{
@@ -523,12 +874,12 @@ TABLE OF CONTENTS:
 			width:10%;
 		}
 	}
-	
+
 	.column-three{
-		width:40%;
+		width:20%;
 
 		img.fir2{
-			width:100%;
+			width:250%;
 		}
 	}
 	.column-four{
@@ -539,16 +890,21 @@ TABLE OF CONTENTS:
 	}
 
 	.column-five{
-		width:50%;
+		width:60%;
+		 
+		p.paragrah-five{
+		   width:100%;
+		 }
 		
 	}
 
 	.column-six{
-		width:50%;
+		width:40%;
 		float:right;
+		overflow: hidden;
 
 		img.branches{
-			width:100%;
+			width:130%;
 		}
 	}
 
@@ -556,7 +912,7 @@ TABLE OF CONTENTS:
 		width:50%;
 
 		img.tallGrass{
-			width:80%;
+			width:100%;
 			
 		}
 		
@@ -565,18 +921,54 @@ TABLE OF CONTENTS:
 	.column-eight{
 		width:50%;
 		float:right;
+		padding:30px;
 	}
 
 	.ferry-commuting{
 		font-size: 1.3em;
 		line-height: 2em;
-		padding:100px;
-	}
+			}
 }
 
 @media only screen and (min-width: 1441px) {
+
+	.article-header{
+		
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 1.2em;
+		position:relative;
+		bottom:-600px;
+		left:40px;
+		
+		h2{
+			margin-top:30px;
+		}
+	}
+	
+	.article-title{
+		font-family: essonnes-headline, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 5em;
+		position:relative;
+		bottom:-640px;
+		left:40px;
+
+		&.at2{
+			position:relative; 
+			left:200px;
+		}
+
+	}
+
+
+	
+	
 	.column {
 		float: left;
+		margin-top:50px;
 		
 		
 	}
@@ -589,7 +981,7 @@ TABLE OF CONTENTS:
 	
 	.one{
 		float: left;
-		width: 75%;
+		width: 70%;
 		height: 100vh;
 	}
 	
@@ -597,18 +989,70 @@ TABLE OF CONTENTS:
 		display:none;
 	
 	}
-	
+
 	.pineCone{
 		display:none;
 	}
-	
-	.fir{
-		display:none;
-	}
 
+	.fir{
+		width:100%;
+		
+	}
+	
 	.two{
 		width:25%;
+		right:0;
+		top:0;
+		transition: transform .4s ease-out;
 		// height: 100vh;
+
+		.pineCone2{
+			width:100%;
+			float:left;
+			position:absolute;
+			right:170px;
+			display:none;
+		}
+		
+		.menu-title{
+			position: relative;
+			left:250px;
+			top:-30px;
+			width:100%;
+			height: 20%;
+			transition: transform .4s ease-out;
+			display:none;
+
+			font-family: essonnes-display, serif;
+			font-weight: 400;
+			font-size:1.2em;
+			font-style: normal;
+
+		}	
+		&:hover{
+			
+			transform: translateX(-75%);
+
+
+			& + .column.one{
+				transform: translateX(-50%);
+
+			}
+
+
+			& .menu-title{
+				display:block;
+				// height:50px;
+			
+
+			}
+
+			& .pineCone2{
+				display:block;
+				float:right;
+			}
+		}
+		
 	}
 
 	.logo1{
@@ -621,7 +1065,7 @@ TABLE OF CONTENTS:
 	}
 
 	h2.intro-title{
-		font-size: 1.4em;
+		font-size: 1.2em;
 		text-align: center;
 	}
 
@@ -630,30 +1074,13 @@ TABLE OF CONTENTS:
 		text-align: center;
 	}
 	
-	.grassBorder{
-		position: absolute;
-		bottom:300px;
-	}
 
-	h4.page2-title-small{
-		font-size: 1.5em;
-		position: absolute;
-		bottom:220px;
-	}
-
-	h1.page2-title-big{
-		position:absolute;
-		bottom:95px;
-		font-size: 5em;
-	}
-	
 	.icon{
 		
-		margin:20% 0% 0% 43%;
+		margin:25% 0% 0% 40%;
 
 		&.man{
-			margin-top:10%;
-			width:18%;
+			width:20%;
 		}
 
 		&.ring{
@@ -672,29 +1099,36 @@ TABLE OF CONTENTS:
 			width:10%;
 		}
 	}
-	
+
 	.column-three{
-		width:40%;
+		width:60%;
 
 		img.fir2{
-			width:100%;
+			width:80%;
 		}
 	}
 	.column-four{
-		width:50%;
+		width:40%;
 		float:right;
+		padding:30px;
 		
 		
 	}
 
 	.column-five{
 		width:50%;
+		padding:30px;
+		p.paragrah-five{
+		   width:100%;
+		 
+		 }
 		
 	}
 
 	.column-six{
-		width:50%;
+		width:40%;
 		float:right;
+		overflow: hidden;
 
 		img.branches{
 			width:100%;
@@ -703,22 +1137,26 @@ TABLE OF CONTENTS:
 
 	.column-seven{
 		width:50%;
+		
+		overflow:hidden;
 
 		img.tallGrass{
-			width:50%;
+			width:45%;
+			position:absolute;
+			top:2900px;
 			
 		}
 		
 	}
 
 	.column-eight{
-		width:50%;
+		width:45%;
 		float:right;
+		padding:30px;
 	}
 
 	.ferry-commuting{
 		font-size: 1.3em;
 		line-height: 2em;
-		padding:100px;
-	}
+			}
 }
